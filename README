@@ -1,0 +1,19 @@
+Laronda
+========================
+
+This application was generated with the rails_apps_composer gem:
+https://github.com/RailsApps/rails_apps_composer
+provided by the RailsApps Project:
+http://railsapps.github.com/
+
+________________________
+
+Recipes:
+["auth", "controllers", "email", "extras", "frontend", "gems", "git", "init", "models", "railsapps", "readme", "routes", "setup", "testing", "views"]
+
+Preferences:
+{:dev_webserver=>"webrick", :prod_webserver=>nil, :database=>"sqlite", :templates=>"erb", :testing=>"rspec", :integration=>"cucumber", :fixtures=>"factory_girl", :frontend=>"bootstrap", :form_builder=>"none", :email=>"gmail", :authentication=>"devise", :devise_modules=>"default", :authorization=>"cancan", :git=>true, :railsapps=>"rails3-bootstrap-devise-cancan", :unit_test=>"rspec", :bootstrap=>"sass", :starter_app=>"admin_app", :ban_spiders=>true}
+
+________________________
+
+License
