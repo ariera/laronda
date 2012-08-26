@@ -1,0 +1,22 @@
+.span2.offset6
+  =link_to 'Pull More Tweets', refresh_tweets_path(today:params[:today]), class:'btn btn-large btn-primary'
+%br
+%br
+%br
+.span8
+  %table.table.table-striped.table-hover
+    %thead
+      %th user
+      %th tweet
+      %th date
+      %th actions
+    -@tweets.each do |tweet|
+      %tr
+        %td
+          = link_to image_tag(tweet.profile_image_url), tweet.url
+          %br
+          = link_to tweet.from_user, tweet.url
+        %td= tweet.text
+        %td= tweet.t_created_at.in_time_zone('Madrid')
+        %td= link_to "delete", tweet_path(tweet, return_to_url:request.fullpath), method: :delete
+

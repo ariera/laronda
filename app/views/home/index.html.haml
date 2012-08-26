@@ -1,0 +1,14 @@
+.span6
+  %table.table.table-striped.table-hover
+    %thead
+      %th user
+      %th tweet
+      %th date
+    -@tweets.each do |tweet|
+      %tr
+        %td
+          = link_to image_tag(tweet.profile_image_url), tweet.url
+          %br
+          = link_to tweet.from_user, tweet.url
+          %td= tweet.text
+        %td= tweet.t_created_at.in_time_zone('Madrid')
